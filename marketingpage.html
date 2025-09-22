@@ -1,0 +1,79 @@
+<!-- MARKETING -->
+<section id="marketing">
+<style>
+:root{--bg:#0f3b3b;--card:#113f3f;--accent:#00c2a8;--muted:#9fbfb8;--glass:rgba(255,255,255,0.04);--maxw:1100px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#e7f6f5;background:linear-gradient(180deg,var(--bg),#052627);-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:40px auto;padding:24px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+.logo{display:flex;align-items:center;gap:12px}
+.mark{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#00a88d);display:grid;place-items:center;font-weight:700;color:#042;box-shadow:0 6px 24px rgba(0,0,0,0.45)}
+nav{margin-left:auto}
+nav a{color:#dff7f0;text-decoration:none;margin-left:18px;font-weight:600}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:32px}
+.hero-card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,0.45)}
+h1{margin:0;font-size:34px;line-height:1.05}
+p.lead{color:var(--muted);margin-top:12px}
+.cta{margin-top:18px}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--accent);color:#042;text-decoration:none;font-weight:700;margin-right:10px}
+.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#dff7f0;padding:10px 14px}
+.mockup{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.05));padding:18px;border-radius:12px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:32px}
+.feature{background:var(--card);padding:18px;border-radius:12px}
+.feature h3{margin:0 0 8px 0}
+section{margin-bottom:40px}
+footer{color:var(--muted);text-align:center;padding:18px 0}
+
+/* Responsive */
+@media (max-width:920px){.hero{grid-template-columns:1fr;}.features{grid-template-columns:1fr 1fr}.wrap{margin:20px 12px}}
+@media (max-width:560px){.features{grid-template-columns:1fr}.logo span{display:none}.nav{display:none}}
+
+/* Simple card list for prototype/guide pages */
+.card{background:var(--card);padding:18px;border-radius:12px;margin-bottom:12px}
+.codebox{background:#071e1e;padding:14px;border-radius:8px;color:#bfeee4;font-family:monospace;font-size:13px;overflow:auto}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}
+@media (max-width:720px){.grid-2{grid-template-columns:1fr}}
+.about-image img{width:100%;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.45)}
+</style>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutyoupage.html">About You</a>
+    <a href="applicationprototype.html">Prototype</a>
+    <a href="marketingpage.html" class="active">Marketing</a>
+    <a href="userguide.html">User Guide</a>
+  </nav>
+
+  <h2>Marketing</h2>
+  <div class="card">
+    <h3>Why ManaForge?</h3>
+    <p>Simplify deckbuilding, sharpen strategy, and own your collection with ease. 
+       ManaForge saves you time, money, and stress by putting every tool you need in one place.</p>
+
+    <h3>Pricing Model</h3>
+    <p><strong>Free:</strong> Basic deckbuilding, limited collection size.</p>
+    <p><strong>Premium ($4.99/month):</strong> Full collection sync, price tracking, advanced synergy engine.</p>
+
+    <h3>Money Saved</h3>
+    <ul>
+      <li><strong>Up to $50/month:</strong> Avoid buying unnecessary singles by tracking what you already own.</li>
+      <li><strong>20–30% savings:</strong> Find the best prices with automatic price comparison across vendors.</li>
+      <li><strong>Save hours:</strong> Reduce deckbuilding time by 60% with automated suggestions and synergy checks.</li>
+    </ul>
+
+    <h3>Convenience</h3>
+    <ul>
+      <li><strong>One app, all tools:</strong> No need to switch between spreadsheets, price sites, and deck builders.</li>
+      <li><strong>Always up to date:</strong> Automatic syncing keeps your collection current across devices.</li>
+      <li><strong>Built for players:</strong> Designed by a Commander player for Commander players, casual and competitive alike.</li>
+    </ul>
+
+    <h3>Testimonials</h3>
+    <blockquote>"ManaForge made building my Valakut deck so much easier!" — Commander Player</blockquote>
+    <blockquote>"I saved over $30 on my latest deck thanks to the price tracking feature." — Casual Player</blockquote>
+
+    <div class="cta">
+      <a href="applicationprototype.html" class="btn">Try the Prototype</a>
+      <a href="userguide.html" class="btn secondary">Learn More</a>
+    </div>
+  </div>
+</section>

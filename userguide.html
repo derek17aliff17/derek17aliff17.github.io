@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Guide — ManaForge</title>
+<style>
+:root{--bg:#0f3b3b;--card:#113f3f;--accent:#00c2a8;--muted:#9fbfb8;--glass:rgba(255,255,255,0.04);--maxw:1100px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#e7f6f5;background:linear-gradient(180deg,var(--bg),#052627);-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:40px auto;padding:24px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+.logo{display:flex;align-items:center;gap:12px}
+.mark{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#00a88d);display:grid;place-items:center;font-weight:700;color:#042;box-shadow:0 6px 24px rgba(0,0,0,0.45)}
+nav{margin-left:auto}
+nav a{color:#dff7f0;text-decoration:none;margin-left:18px;font-weight:600}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:32px}
+.hero-card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,0.45)}
+h1{margin:0;font-size:34px;line-height:1.05}
+p.lead{color:var(--muted);margin-top:12px}
+.cta{margin-top:18px}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--accent);color:#042;text-decoration:none;font-weight:700;margin-right:10px}
+.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#dff7f0;padding:10px 14px}
+.mockup{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.05));padding:18px;border-radius:12px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:32px}
+.feature{background:var(--card);padding:18px;border-radius:12px}
+.feature h3{margin:0 0 8px 0}
+section{margin-bottom:40px}
+footer{color:var(--muted);text-align:center;padding:18px 0}
+
+/* Responsive */
+@media (max-width:920px){.hero{grid-template-columns:1fr;}.features{grid-template-columns:1fr 1fr}.wrap{margin:20px 12px}}
+@media (max-width:560px){.features{grid-template-columns:1fr}.logo span{display:none}.nav{display:none}}
+
+/* Simple card list for prototype/guide pages */
+.card{background:var(--card);padding:18px;border-radius:12px;margin-bottom:12px}
+.codebox{background:#071e1e;padding:14px;border-radius:8px;color:#bfeee4;font-family:monospace;font-size:13px;overflow:auto}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}
+@media (max-width:720px){.grid-2{grid-template-columns:1fr}}
+.about-image img{width:100%;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.45)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo">
+    <div class="mark">M</div>
+    <div>
+      <div class="title">ManaForge</div>
+      <div class="subtitle">Deckbuilding • Collection • Analytics</div>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutyoupage.html">About You</a>
+    <a href="applicationprototype.html">Prototype</a>
+    <a href="marketingpage.html">Marketing</a>
+    <a href="userguide.html" class="active">User Guide</a>
+  </nav>
+</header>
+
+<section>
+  <h2>User Guide</h2>
+
+  <div class="card">
+    <h3>Quick Start</h3>
+    <ol>
+      <li><strong>Create an Account:</strong> Sign up with your email or link your Google account.</li>
+      <li><strong>Import Your Collection:</strong> Upload a CSV, paste your list, or scan cards with your phone’s camera.</li>
+      <li><strong>Build Your Deck:</strong> Use the deck builder to search cards, view suggestions, and check color balance.</li>
+      <li><strong>Analyze:</strong> Log games to see your win rates, draw percentages, and meta matchups.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h3>Navigation Overview</h3>
+    <ul>
+      <li><strong>Home:</strong> See recent decks, new sets, and announcements.</li>
+      <li><strong>Collection:</strong> Manage your cards, see what you’re missing, and find duplicates to trade.</li>
+      <li><strong>Deckbuilder:</strong> Build decks, view stats, and export to popular platforms like Moxfield or Archidekt.</li>
+      <li><strong>Analytics:</strong> View game history, matchup breakdowns, and card performance ratings.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Tips & Tricks</h3>
+    <ul>
+      <li>Use the <em>Price Tracker</em> to get alerts when cards you want drop in price.</li>
+      <li>Tag decks as <em>Casual</em> or <em>Competitive</em> for more accurate suggestions.</li>
+      <li>Filter your collection by set, color, rarity, or foil/non-foil to organize trades faster.</li>
+      <li>Export your data regularly for backup, especially before large collection updates.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Troubleshooting</h3>
+    <p>If pricing data fails to load:</p>
+    <ol>
+      <li>Check your internet connection.</li>
+      <li>Clear your browser cache and refresh.</li>
+      <li>Manually override prices by editing card entries.</li>
+      <li>If issues persist, contact support at <a href="mailto:support@manaforge.com">support@manaforge.com</a>.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h3>Contact & Support</h3>
+    <p>Need help? You can reach us anytime:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:support@manaforge.com">support@manaforge.com</a></li>
+      <li><strong>Discord:</strong> Join our community server for deck tech help and bug reports.</li>
+      <li><strong>Updates:</strong> Check the <em>What’s New</em> page for patch notes and upcoming features.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>Created by Derek Aliff • ManaForge Prototype</p>
+</footer>
+</div>
+</body>
+</html>
